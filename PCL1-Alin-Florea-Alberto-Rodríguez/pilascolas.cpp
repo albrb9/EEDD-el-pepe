@@ -57,4 +57,9 @@ Auto Cola:desencolar(){
     pNodo nodo:
     Auto v;
     Auto vnull;
+
+    nodo = primero
+
+    if(!nodo) return vnull;
+    primero = nodo -> siguiente;
 }
