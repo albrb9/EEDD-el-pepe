@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1606653063 source:c:\users\alinf\onedrive\documentos\github\eedd-el-pepe\pcl1-alin-florea-alberto-rodríguez\main.cpp
+	<iostream>
+	<stdlib.h>
+	<ctime>
+	<iomanip>
+	"pilascolas.h"
+
+1606652909 c:\users\alinf\onedrive\documentos\github\eedd-el-pepe\pcl1-alin-florea-alberto-rodríguez\pilascolas.h
+	<iostream>
+
+1606645118 source:c:\users\alinf\onedrive\documentos\github\eedd-el-pepe\pcl1-alin-florea-alberto-rodríguez\pilascolas.cpp
+	"pilascolas.h"
+

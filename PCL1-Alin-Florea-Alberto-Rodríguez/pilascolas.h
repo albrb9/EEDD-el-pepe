@@ -5,6 +5,10 @@
 
 using namespace std;
 
+#define N1 100
+#define N2 8
+#define N3 8
+
 struct Auto{
     string n_bastidor;
     string modelo;
@@ -37,7 +41,9 @@ class Pila
         Pila() : cima(NULL) {}
         ~Pila();
         void apilar (Auto v);
-        Auto despilar();
+        Auto desapilar();
+        int longPila();
+        void mostrarCima();
 };
 class Cola{
     public:
@@ -45,8 +51,8 @@ class Cola{
         ~Cola();
         void encolar (Auto v);
         Auto desencolar();
+        int longCola();
     private:
         pNodo primero, ultimo;
 };
 #endif // PILASCOLAS_H
-
