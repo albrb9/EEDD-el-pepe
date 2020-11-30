@@ -135,7 +135,7 @@ Auto calcularSecuenciaAleatoria(void)
     Auto cochegenerado;
 
     string modeloauto[]={"Ibiza","Arona","Ateca","Toledo"};
-    string colorauto[]={"blanco","rojo","azul","amarillo","verde","negro","rosa"};
+    string colorauto[]={"gris","rojo","azul","neon","verde","negro","rosa"};
     string estado[]={"FI","FF","CI","CC","CF","CA"};
 
     numaleat=rand()%7;

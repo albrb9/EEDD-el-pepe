@@ -23,18 +23,33 @@ int main()
 
     //strand(time(NULL));
 
-    int i = 0, orig = 0, dest = 0, pasos = 0;
+    int i = 0, orig = 0, dest = 0, pasos = 0, pasoact = 1;
     int longcola1, longcola2, longcola3, longcola4, longcolamax;
     int longpila1, longpila2, longpila3, longpilamax;
     int pasosmax, tipo;
 
+
     pasosmax = (N1/N2)+1;
-    cout <<  "Parametros de configuracion: N1: " << N1 << " N2: " << N2 << " N3: " << " " << endl;
-    cout <<  "Numero de pasos " << pasosmax << endl;
+    cout <<  "Parametros de configuracion: N1: " << N1 << " N2: " << N2 << " N3: " << N3 << endl;
+    cout <<  "Numero de pasos: " << pasosmax << endl;
 
-    while (pasos < (N1/N2)+4){
+    for(int i = pasoact; pasoact <= pasosmax; pasoact++){
+    cout << "Pasos de ejecucion: " << pasoact << "/" << pasosmax << endl;
+    cout << "\n" << endl;
+    cout << "          Linea de produccion 1:|" << "          Linea de produccion 2:|" << "         Linea de produccion 3:|" << "           Linea de produccion 4:|" << endl;
+    cout << "---------------------------------------------------------------------------------------------------------------------" << endl;
+    cout << "Bastidor|" << " Modelo|" << "  Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<< endl;
+//    cout << "Bastidor|" << << " Modelo|" << "  Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<< endl;
+    cout << "---------------------------------------------------------------------------------------------------------------------" << endl;
+    cout << "           Camion Bilbao:"   << "                   Camion Murcia:" << "                     Camion Salamanca:" << endl;
+    cout << "---------------------------------------------------------------------------------------------------------------------" << endl;
+    cout << "Bastidor|" << " Modelo|" << "  Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<< endl;
+    cout << "---------------------------------------------------------------------------------------------------------------------\n" << endl;
+    cout << "Se cambian los estados a los coches que ya estan en la linea de produccion\n" << endl;
+    system("pause");
 
-    }
+}
+}
         /*cola.encolar(coche1);
         cout << "Encolando: " << coche1.n_bastidor << endl;
         cola.encolar(coche2);
@@ -54,4 +69,5 @@ int main()
 
 return 0;
 */
-}
+
+
