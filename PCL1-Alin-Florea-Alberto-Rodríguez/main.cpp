@@ -15,16 +15,16 @@ int mayor4(int,int,int,int);
 int main()
 {
     Cola cola1, cola2, cola3, cola4;
-    Pila pila, pila1, pila2, pila_aux1, pila_aux2, pila_aux3;
-    Auto coche1={"3547T12","Ateca","Blanco"};
-    Auto coche2={"4213T12","Ibiza","Negro"};
-    Auto coche3={calcularSecuenciaAleatoria()};
+    Pila pila1, pila2, pila3,pila4, pila_aux1, pila_aux2, pila_aux3, pila_aux4;
+    Auto coche1={"3547T12","Ateca","Blanco", "FI"};
+    Auto coche2={"4213T12","Ibiza","Negro","FI"};
+
     Auto cochenulo={" "," "," "," "};
     Auto cocheaux, cocheaux1, cocheaux2, cocheaux3, cocheaux4;
 
     //strand(time(NULL));
 
-    int i = 0, orig = 0, dest = 0, pasos = 0, pasoact = 1;
+    int i = 0, orig = 0, dest = 0, pasos = 0, pasoact = 1, cochesgenerado = 1;
     int longcola1, longcola2, longcola3, longcola4, longcolamax;
     int longpila1, longpila2, longpila3, longpilamax;
     int pasosmax, tipo;
@@ -42,13 +42,53 @@ int main()
     cout << "---------------------------------------------------------------------------------------------------------------------" << endl;
     cout << "Bastidor|" << " Modelo|" << "  Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<< endl;
 //    cout << "Bastidor|" << << " Modelo|" << "  Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<< endl;
-    cout << coche3.n_bastidor << coche3.color << coche3.modelo << coche3.estado << endl;
+    //pila.apilar(coche3);
+    //pila.mostrarCima();
+    //coche3 = pila.desapilar();
+    //pila.mostrarCima();
+    for(int i = cochesgenerado; cochesgenerado <= 10; cochesgenerado++){
+        Auto coche3={calcularSecuenciaAleatoria()};
+            if  (coche3.modelo == "Ibiza"){
+                pila_aux1.apilar(coche3);
+                pila_aux1.mostrarCima();
+                pila_aux1.desapilar();
+                pila1.apilar(coche3);
+
+
+
+            }
+            else if (coche3.modelo == "Arona"){
+                pila_aux2.apilar(coche3);
+                pila_aux2.mostrarCima();
+                pila2.apilar(coche3);
+                pila_aux2.desapilar();
+
+            }
+            else if (coche3.modelo == "Ateca"){
+                pila_aux3.apilar(coche3);
+                pila_aux3.mostrarCima();
+                pila3.apilar(coche3);
+                pila_aux3.desapilar();
+
+            }
+            else if (coche3.modelo == "Toledo"){
+                pila_aux4.apilar(coche3);
+                pila_aux4.mostrarCima();
+                pila4.apilar(coche3);
+                pila_aux4.desapilar();
+
+            }
+            cout << endl;
+        //cout << coche3.color<< endl;
+    }
+    //cout << coche3.color << coche3.color << coche3.modelo << coche3.estado << endl;
     cout << "---------------------------------------------------------------------------------------------------------------------" << endl;
     cout << "           Camion Bilbao:"   << "                   Camion Murcia:" << "                     Camion Salamanca:" << endl;
     cout << "---------------------------------------------------------------------------------------------------------------------" << endl;
     cout << "Bastidor|" << " Modelo|" << "  Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<<"Bastidor|" << " Modelo|" << "    Color|" << "Estado|"<< endl;
     cout << "---------------------------------------------------------------------------------------------------------------------\n" << endl;
     cout << "Se cambian los estados a los coches que ya estan en la linea de produccion\n" << endl;
+    //cochesgenerado = 1;
     system("pause");
 
 }

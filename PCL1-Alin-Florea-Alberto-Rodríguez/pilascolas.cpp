@@ -51,8 +51,8 @@ int Pila::longPila()
 void Pila::mostrarCima()
 {
 
-    if(cima) cout << "Cima : fila vacia " << endl;
-    else cout << "Cima " << cima->valor.n_bastidor << endl;
+    if  (cima)  cout << cima->valor.n_bastidor << " "<< cima->valor.modelo << " "<< cima->valor.color << " "<< cima->valor.estado << " ";
+    else cout << "  ";
 }
 // --------METODOS COLA---------
 
@@ -145,7 +145,7 @@ Auto calcularSecuenciaAleatoria(void)
     numaleat=rand()%7;
     cochegenerado.color=colorauto[numaleat];
     numaleat=rand()%6;
-    cochegenerado.estado="";
+    cochegenerado.estado="FI";
 
     return cochegenerado;
 }
