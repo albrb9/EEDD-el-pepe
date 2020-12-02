@@ -113,6 +113,57 @@ int main()
             cocheaux3 = pila_aux3.desapilar();
             pila7.apilar(cocheaux3);;
         }
+            int e = 0;
+    e = pila5.longPila();
+
+    for(int i =1; i<= e; i++){
+        cocheaux1 = pila5.desapilar();
+
+            if(cocheaux1.estado == "CI"){
+            cocheaux1.estado = "CF";
+            pila_aux1.apilar(cocheaux1);
+            }
+
+
+    }
+    for(int i =1; i<= e; i++){
+        cocheaux1 = pila_aux1.desapilar();
+        pila5.apilar(cocheaux1);
+    }
+    int g = 0;
+    g = pila6.longPila();
+
+    for(int i =1; i<= g; i++){
+        cocheaux1 = pila6.desapilar();
+
+            if(cocheaux1.estado == "CI"){
+            cocheaux1.estado = "CF";
+            pila_aux1.apilar(cocheaux1);
+            }
+
+
+    }
+    for(int i =1; i<= e; i++){
+        cocheaux1 = pila_aux1.desapilar();
+        pila6.apilar(cocheaux1);
+    }
+    int f = 0;
+    f = pila7.longPila();
+
+    for(int i =1; i<= f; i++){
+        cocheaux1 = pila7.desapilar();
+
+            if(cocheaux1.estado == "CI"){
+            cocheaux1.estado = "CF";
+            pila_aux1.apilar(cocheaux1);
+            }
+
+
+    }
+    for(int i =1; i<= e; i++){
+        cocheaux1 = pila_aux1.desapilar();
+        pila7.apilar(cocheaux1);
+    }
 
         int j = 0;
     j = pila1.longPila();
@@ -204,38 +255,10 @@ int main()
 
 
 
-
-    cout << "--------------------------------------------------------------------------------------------------------------------------------------" << endl;
-    cout << "      Centro de Distribucion Zaragoza:"   << "    Centro de Distribucion Madrid:" << "     Centro de distribucion Leon:" << endl;
-    cout << "--------------------------------------------------------------------------------------------------------------------------------------" << endl;
-    cout << "Bastidor| Modelo|  Color| Estado |Bastidor| Modelo|   Color|Estado| Bastidor| Modelo|  Color|Estado| Bastidor| Modelo|   Color|Estado|"<< endl;
-    cout << "--------------------------------------------------------------------------------------------------------------------------------------\n" << endl;
-    cout << endl;
     system("pause");
 
 
    }
 }
-
-
-        /*cola.encolar(coche1);
-        cout << "Encolando: " << coche1.n_bastidor << endl;
-        cola.encolar(coche2);
-        cout << "Encolando: " << coche2.n_bastidor << endl;
-
-        coche = cola.desencolar();
-        cout << "Desencolar: " << coche.n_bastidor << endl;
-
-        cout << "Apilando: " << coche.n_bastidor << endl;
-        pila.apilar(coche);
-        cout << "Apilando: " << coche2.n_bastidor << endl;
-        pila.apilar(coche2);
-
-        coche = pila.desapilar();
-        cout << "Desapilando: " << coche.n_bastidor << endl;
-        cout << "Desapilando: " << coche.n_bastidor << " " << coche.modelo << " " << coche.color << " " << coche.estado << endl;
-
-return 0;
-*/
 
 
