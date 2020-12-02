@@ -37,7 +37,7 @@ int main()
     cout << "-----------------------------------------------------------------------------------------------------------------------------------" << endl;
     cout << "Bastidor| Modelo| Color| Estado|Bastidor| Modelo|   Color|Estado| Bastidor| Modelo|  Color|Estado| Bastidor| Modelo|  Color|Estado|"<< endl;
 
-    for(int i = 0; i <= 10; i++){
+    for(int i = 0; i <= 8; i++){
         Auto coche3={calcularSecuenciaAleatoria()};
             if  (coche3.modelo == "Ibiza"){
                 pila1.apilar(coche3);
