@@ -12,9 +12,11 @@ Auto calcularSecuenciaAleatoria();
 int mayor(int,int);
 int mayor4(int,int,int,int);
 int main()
+
+
 {
-    Cola cola1, cola2, cola3, cola4;
-    Pila pila1, pila2, pila3,pila4, pila_aux1, pila_aux2, pila_aux3, pila_aux4;
+    Cola cola_aux, cola1, cola2, cola3, cola4;
+    Pila pila ,pila1, pila2, pila3,pila4,pila5,pila6,pila7, pila_aux1, pila_aux2, pila_aux3, pila_aux4;
     Auto cochenulo={" "," "," "," "};
     Auto cocheaux, cocheaux1, cocheaux2, cocheaux3, cocheaux4;
 
@@ -79,8 +81,132 @@ int main()
 
 
     }
+
+
+
+
+
+
+
     cout << "--------------------------------------------------------------------------------------------------------------------------------------" << endl;
     cout << "               Camion Bilbao:"   << "                      Camion Murcia:" << "                        Camion Salamanca:" << endl;
+    cout << "--------------------------------------------------------------------------------------------------------------------------------------" << endl;
+    cout << "Bastidor| Modelo|  Color| Estado |Bastidor| Modelo|   Color|Estado| Bastidor| Modelo|  Color|Estado| Bastidor| Modelo|   Color|Estado|"<< endl;
+    cout << "--------------------------------------------------------------------------------------------------------------------------------------\n" << endl;
+    while (pila5.longPila() != 0 or pila6.longPila() != 0 or pila7.longPila() != 0){
+        cocheaux1 = pila5.desapilar();
+        cout << setw(1) << cocheaux1.n_bastidor << setw(8)<< cocheaux1.modelo << setw(8) << cocheaux1.color << setw(8)<< cocheaux1.estado << "|" << setw(8);
+        pila_aux1.apilar(cocheaux1);
+        cocheaux2 = pila6.desapilar();
+        cout << cocheaux2.n_bastidor << setw(8)<< cocheaux2.modelo << setw(8) << cocheaux2.color << setw(8)<< cocheaux2.estado << "|" << setw(8);
+        pila_aux2.apilar(cocheaux2);
+        cocheaux3 = pila7.desapilar();
+        cout << cocheaux3.n_bastidor << setw(8)<< cocheaux3.modelo << setw(8) << cocheaux3.color << setw(8)<< cocheaux3.estado << "|" << setw(8);
+        pila_aux3.apilar(cocheaux3);
+        cout << endl;
+    }
+        while (pila_aux1.longPila() != 0 or pila_aux2.longPila() != 0 or pila_aux3.longPila() != 0 or pila_aux4.longPila() != 0){
+            cocheaux1 = pila_aux1.desapilar();
+            pila5.apilar(cocheaux1);
+            cocheaux2 = pila_aux2.desapilar();
+            pila6.apilar(cocheaux2);
+            cocheaux3 = pila_aux3.desapilar();
+            pila7.apilar(cocheaux3);;
+        }
+
+        int j = 0;
+    j = pila1.longPila();
+    for(int i =1; i<= j; i++){
+        cocheaux1 = pila1.desapilar();
+
+            if(cocheaux1.estado == "FI"){
+            cocheaux1.estado = "FF";
+            pila_aux1.apilar(cocheaux1);
+            }
+            else if(cocheaux1.estado == "FF"){
+            cocheaux1.estado = "CI";
+            pila.apilar(cocheaux1);
+            }
+
+    }
+    for(int i =1; i<= j; i++){
+        cocheaux1 = pila_aux1.desapilar();
+        pila1.apilar(cocheaux1);
+    }
+    int a = 0;
+    a = pila2.longPila();
+    for(int i =1; i<= a; i++){
+        cocheaux1 = pila2.desapilar();
+
+            if(cocheaux1.estado == "FI"){
+            cocheaux1.estado = "FF";
+            pila_aux1.apilar(cocheaux1);
+            }
+            else if(cocheaux1.estado == "FF"){
+            cocheaux1.estado = "CI";
+            pila.apilar(cocheaux1);
+            }
+
+    }
+    for(int i =1; i<= a; i++){
+        cocheaux1 = pila_aux1.desapilar();
+        pila2.apilar(cocheaux1);
+    }
+
+    int b = 0;
+    b = pila3.longPila();
+    for(int i =1; i<= b; i++){
+        cocheaux1 = pila3.desapilar();
+
+            if(cocheaux1.estado == "FI"){
+            cocheaux1.estado = "FF";
+            pila_aux1.apilar(cocheaux1);
+            }
+            else if(cocheaux1.estado == "FF"){
+            cocheaux1.estado = "CI";
+            pila.apilar(cocheaux1);
+            }
+
+    }
+    for(int i =1; i<= b; i++){
+        cocheaux1 = pila_aux1.desapilar();
+        pila3.apilar(cocheaux1);
+    }
+    int c = 0;
+    c = pila4.longPila();
+    for(int i =1; i<= c; i++){
+        cocheaux1 = pila4.desapilar();
+
+            if(cocheaux1.estado == "FI"){
+            cocheaux1.estado = "FF";
+            pila_aux1.apilar(cocheaux1);
+            }
+            else if(cocheaux1.estado == "FF"){
+            cocheaux1.estado = "CI";
+            pila.apilar(cocheaux1);
+            }
+
+    }
+    for(int i =1; i<= c; i++){
+        cocheaux1 = pila_aux1.desapilar();
+        pila4.apilar(cocheaux1);
+    }
+
+    while(pila.longPila() != 0){
+        cocheaux1 = pila.desapilar();
+        pila5.apilar(cocheaux1);
+        cocheaux2 = pila.desapilar();
+        pila6.apilar(cocheaux2);
+        cocheaux3 = pila.desapilar();
+        pila7.apilar(cocheaux3);
+        }
+
+
+
+
+
+    cout << "--------------------------------------------------------------------------------------------------------------------------------------" << endl;
+    cout << "      Centro de Distribucion Zaragoza:"   << "    Centro de Distribucion Madrid:" << "     Centro de distribucion Leon:" << endl;
     cout << "--------------------------------------------------------------------------------------------------------------------------------------" << endl;
     cout << "Bastidor| Modelo|  Color| Estado |Bastidor| Modelo|   Color|Estado| Bastidor| Modelo|  Color|Estado| Bastidor| Modelo|   Color|Estado|"<< endl;
     cout << "--------------------------------------------------------------------------------------------------------------------------------------\n" << endl;
