@@ -54,16 +54,16 @@ int main()
     }
 while (pila1.longPila() != 0 or pila2.longPila() != 0 or pila3.longPila() != 0 or pila4.longPila() != 0){
         cocheaux1 = pila1.desapilar();
-        cout << setw(1)<< cocheaux1.n_bastidor << setw(9)<< cocheaux1.modelo << setw(9) << cocheaux1.color << setw(9)<< cocheaux1.estado << "|" << setw(9);
+        cout << setw(2) << cocheaux1.n_bastidor << setw(8)<< cocheaux1.modelo << setw(8) << cocheaux1.color << setw(8)<< cocheaux1.estado << "|" << setw(8);
         pila_aux1.apilar(cocheaux1);
         cocheaux2 = pila2.desapilar();
-        cout << cocheaux2.n_bastidor << setw(9)<< cocheaux2.modelo << setw(9) << cocheaux2.color << setw(9)<< cocheaux2.estado << "|" << setw(9);
+        cout << cocheaux2.n_bastidor << setw(8)<< cocheaux2.modelo << setw(8) << cocheaux2.color << setw(8)<< cocheaux2.estado << "|" << setw(8);
         pila_aux2.apilar(cocheaux2);
         cocheaux3 = pila3.desapilar();
-        cout << cocheaux3.n_bastidor << setw(9)<< cocheaux3.modelo << setw(9) << cocheaux3.color << setw(9)<< cocheaux3.estado << "|" << setw(9);
+        cout << cocheaux3.n_bastidor << setw(8)<< cocheaux3.modelo << setw(8) << cocheaux3.color << setw(8)<< cocheaux3.estado << "|" << setw(8);
         pila_aux3.apilar(cocheaux3);
         cocheaux4 = pila4.desapilar();
-        cout << cocheaux4.n_bastidor << setw(9)<< cocheaux4.modelo << setw(9) << cocheaux4.color << setw(9)<< cocheaux4.estado << "|" << setw(9);
+        cout << cocheaux4.n_bastidor << setw(8)<< cocheaux4.modelo << setw(8) << cocheaux4.color << setw(8)<< cocheaux4.estado << "|" << setw(8);
         pila_aux4.apilar(cocheaux1);
         cout << endl;
     }
