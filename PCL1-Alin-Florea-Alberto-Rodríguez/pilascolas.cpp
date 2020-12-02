@@ -51,7 +51,7 @@ int Pila::longPila()
 void Pila::mostrarCima()
 {
 
-    if  (cima)  cout << cima->valor.n_bastidor << " "<< cima->valor.modelo << " "<< cima->valor.color << " "<< cima->valor.estado << " ";
+    if  (cima)  cout << cima->valor.n_bastidor << ""<< cima->valor.modelo << ""<< cima->valor.color << ""<< cima->valor.estado << "" << endl;
     else cout << "  ";
 }
 // --------METODOS COLA---------
@@ -97,7 +97,7 @@ Auto Cola::desencolar()
 int Cola::longCola()
 {
     pNodo actual;
-    int longitud = 0;
+    int longitud=0;
 
     actual=primero;
     while (actual = NULL)
@@ -110,13 +110,13 @@ int Cola::longCola()
 
 
 int num_coches = 0;
-string numletr[10] ;
+
 
 string generaBastidor(void)
 {
     int numini,numfin,i;
     string bastidor = "";
-    string numletr[]={"A","B","C","D","F","G","H","I","J"};
+    string numletr[10]={"A","B","C","D","E","F","G","H","I","J"};
 
     numini=10+rand()%89;
     numfin=1000+num_coches;
@@ -149,7 +149,16 @@ Auto calcularSecuenciaAleatoria(void)
 
     return cochegenerado;
 }
+/*Auto cambiarEstado (void)
+{
+    Auto cochenuevoestado;
+    string bastidorauto[] = cochenuevoestado.n_bastidor;
+    string modeloauto[] = cochenuevosestado.color;
+    string colorauto[] = cochenuevoestado.color;
+    string cocheestado[] = cochenuevoestado.estado;
 
+    return cochenuevoestado;
+}*/
 int mayor(int x, int y)
 {
     return x>y ? x:y;
